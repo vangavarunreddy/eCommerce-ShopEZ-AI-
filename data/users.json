@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Alice Smith",
+    "email": "customer@shopez.com",
+    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOZ.0JVOP89dC18k4hW2AammoJpKF28xq",
+    "role": "CUSTOMER",
+    "address": {
+      "street": "123 Smart Alley",
+      "city": "Tech City",
+      "state": "Silicon",
+      "zip": "94016",
+      "country": "USA"
+    },
+    "phone": "+1-555-0199",
+    "balance": 8500,
+    "wishlist": [],
+    "cart": [],
+    "createdAt": "2026-06-17T07:55:23.071Z",
+    "id": "usr_1"
+  },
+  {
+    "name": "Viper Electronics Store",
+    "email": "seller@shopez.com",
+    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOT8f.92sfgJ5ZMx3YWHaHyjlOxwdvTEa",
+    "role": "SELLER",
+    "address": {
+      "street": "456 Vendor Plaza",
+      "city": "Commerce Town",
+      "state": "Retail",
+      "zip": "10001",
+      "country": "USA"
+    },
+    "phone": "+1-555-0255",
+    "balance": 25000,
+    "wishlist": [],
+    "cart": [],
+    "createdAt": "2026-06-17T07:55:23.072Z",
+    "id": "usr_2"
+  },
+  {
+    "name": "ShopEZ Admin Core",
+    "email": "admin@shopez.com",
+    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOikSvha7rTdfMk6jSHnwhFzSegKgEm8m",
+    "role": "ADMIN",
+    "address": {
+      "street": "789 HQ Parkway",
+      "city": "Central Core",
+      "state": "SysOps",
+      "zip": "00001",
+      "country": "USA"
+    },
+    "phone": "+1-555-0000",
+    "balance": 1000000,
+    "wishlist": [],
+    "cart": [],
+    "createdAt": "2026-06-17T07:55:23.072Z",
+    "id": "usr_3"
+  },
+  {
+    "name": "VVR",
+    "email": "vangavarunreddy156@gmail.com",
+    "passwordHash": "$2b$10$OwXfkyWtHQOAISNcIv7MjuGrdRJ3i5pIc07PigdKDMwUkAPaGzaR6",
+    "role": "CUSTOMER",
+    "phone": "",
+    "address": {
+      "street": "123",
+      "city": "tech",
+      "state": "silicon",
+      "zip": "505",
+      "country": "USA"
+    },
+    "balance": 10100,
+    "wishlist": [
+      "prod_4"
+    ],
+    "cart": [],
+    "createdAt": "2026-06-17T10:20:52.604Z",
+    "id": "usr_gpuz4pxuo"
+  }
+]

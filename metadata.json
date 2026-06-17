@@ -1,0 +1,8 @@
+{
+  "name": "ShopEZ TradeX",
+  "description": "A production-ready full-stack AI-powered stock trading and investment platform with real-time portfolio analytics and intelligent financial Q&A.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

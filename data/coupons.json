@@ -1,0 +1,17 @@
+[
+  {
+    "code": "SHOPEZAI20",
+    "discountPercentage": 20,
+    "isActive": true
+  },
+  {
+    "code": "WELCOME10",
+    "discountPercentage": 10,
+    "isActive": true
+  },
+  {
+    "code": "FESTIVE30",
+    "discountPercentage": 30,
+    "isActive": true
+  }
+]
