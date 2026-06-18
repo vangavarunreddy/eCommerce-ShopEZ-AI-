@@ -214,7 +214,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children, activeView, onNa
                 >
                   <Wallet className="w-3.5 h-3.5 text-teal-500" />
                   <span className="font-mono text-slate-700 dark:text-slate-300">
-                    ${user.balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                    ₹{user.balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </span>
                   <Plus className="w-3 h-3 text-slate-500" />
                 </div>
@@ -321,10 +321,10 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children, activeView, onNa
             <form onSubmit={handleDeposit} className="space-y-4">
               <div>
                 <label className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1.5">
-                  Deposit Amount ($)
+                  Deposit Amount (₹)
                 </label>
                 <div className="relative">
-                  <span className="absolute left-3.5 top-2.5 font-bold font-mono text-slate-400">$</span>
+                  <span className="absolute left-3.5 top-2.5 font-bold font-mono text-slate-400">₹</span>
                   <input
                     type="number"
                     value={depositAmount}
@@ -343,7 +343,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children, activeView, onNa
                       onClick={() => setDepositAmount(preset)}
                       className="flex-1 py-1.5 text-[11px] font-bold tracking-tight rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-mono cursor-pointer"
                     >
-                      +${parseInt(preset).toLocaleString()}
+                      +₹{parseInt(preset).toLocaleString()}
                     </button>
                   ))}
                 </div>

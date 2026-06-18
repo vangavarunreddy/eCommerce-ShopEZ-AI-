@@ -7,7 +7,7 @@ import {
   ShieldAlert, 
   Megaphone, 
   Sparkles, 
-  DollarSign, 
+  IndianRupee, 
   ShoppingCart, 
   Package, 
   Trash2, 
@@ -261,10 +261,10 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         
         <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm flex items-center gap-4">
-          <div className="p-2.5 rounded-xl bg-teal-500/10 text-teal-500"><DollarSign className="w-5 h-5" /></div>
+          <div className="p-2.5 rounded-xl bg-teal-500/10 text-teal-500"><IndianRupee className="w-5 h-5" /></div>
           <div>
             <span className="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Total Sales Revenue</span>
-            <span className="text-lg font-bold font-mono">${summary.totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
+            <span className="text-lg font-bold font-mono">₹{summary.totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
           </div>
         </div>
 
@@ -331,7 +331,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
                         </select>
                       </td>
                       <td className="p-3 text-right font-mono font-semibold">
-                        ${u.balance.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+                        ₹{u.balance.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                       </td>
                       <td className="p-3 text-center">
                         <button
@@ -514,9 +514,9 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
             
             <form onSubmit={handleOverrideBalance} className="space-y-4 text-xs font-semibold">
               <div className="space-y-1.5">
-                <label className="block text-slate-400 uppercase">Set Balance Amount ($)</label>
+                <label className="block text-slate-400 uppercase">Set Balance Amount (₹)</label>
                 <div className="relative">
-                  <span className="absolute left-3.5 top-2.5 font-bold font-mono text-slate-400 pointer-events-none">$</span>
+                  <span className="absolute left-3.5 top-2.5 font-bold font-mono text-slate-400 pointer-events-none">₹</span>
                   <input
                     type="number"
                     step="0.01"

@@ -127,6 +127,15 @@ export const Login: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
     showToast("Loaded test credentials! Click 'Sign In' to proceed.", "success");
   };
 
+  const handleMockAdminLogin = () => {
+    showToast("Loading secure Admin credentials...", "info");
+    setName("ShopEZ Admin Core");
+    setEmail("admin@shopez.com");
+    setPassword("admin123");
+    setIsRegistering(false);
+    showToast("Loaded Admin credentials! Click 'Sign In' to proceed.", "success");
+  };
+
   return (
     <div className="max-w-md mx-auto bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-3xl overflow-hidden shadow-xl p-6 sm:p-8 space-y-6 animate-fade-in pb-12">
       
@@ -142,18 +151,24 @@ export const Login: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
 
       {/* AUTO-FILL / GOOGLE OAUTH SIMULATOR */}
       {!verifyOpen && !forgotOpen && (
-        <button
-          onClick={handleMockGoogleLogin}
-          className="w-full py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-750 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer"
-        >
-          <svg className="w-4 h-4" viewBox="0 0 24 24">
-            <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.3 1 3.4 3.7 1.5 7.7l3.8 3C6.2 7.7 8.9 5 12 5z"/>
-            <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.7-.2-2.3H12v4.4h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.8 3c2.2-2 3.6-5 3.6-8.8z"/>
-            <path fill="#FBBC05" d="M5.3 14.7c-.2-.6-.3-1.3-.3-2.1s.1-1.5.3-2.1L1.5 7.5C.5 9.4 0 11.6 0 12s.5 2.6 1.5 4.5l3.8-3z"/>
-            <path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.8-3c-1.1.7-2.6 1.2-4.2 1.2-3.1 0-5.8-2.7-6.7-5.7L1.5 15.5C3.4 19.5 7.3 23 12 23z"/>
-          </svg>
-          <span>Use Mock Sign-In Credentials</span>
-        </button>
+        <div className="flex gap-3">
+          <button
+            type="button"
+            onClick={handleMockGoogleLogin}
+            className="flex-1 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-750 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer"
+          >
+            <UserCheck className="w-4 h-4 text-teal-500" />
+            <span>Mock Customer</span>
+          </button>
+          <button
+            type="button"
+            onClick={handleMockAdminLogin}
+            className="flex-1 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-750 dark:text-slate-200 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer"
+          >
+            <ShieldCheck className="w-4 h-4 text-indigo-500" />
+            <span>Mock Admin</span>
+          </button>
+        </div>
       )}
 
       {/* CORE FORMS */}

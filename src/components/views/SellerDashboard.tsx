@@ -15,7 +15,7 @@ import {
   Truck,
   CheckCircle,
   BarChart3,
-  DollarSign
+  IndianRupee
 } from "lucide-react";
 
 export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string) => void }> = ({ onNavigate }) => {
@@ -266,11 +266,11 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
         
         <div className="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-5 shadow-sm flex items-center gap-4">
           <div className="p-3 rounded-xl bg-teal-500/10 text-teal-500">
-            <DollarSign className="w-6 h-6" />
+            <IndianRupee className="w-6 h-6" />
           </div>
           <div>
             <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Sales Volume</span>
-            <span className="text-xl font-bold font-mono">${totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
+            <span className="text-xl font-bold font-mono">₹{totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span>
           </div>
         </div>
 
@@ -322,7 +322,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                     </div>
                     <div>
                       <h4 className="font-bold text-xs line-clamp-1">{p.title}</h4>
-                      <span className="text-[10px] text-slate-400 font-mono">${p.price.toFixed(2)} | Stock: <span className={p.stock < 10 ? "text-rose-500 font-bold" : ""}>{p.stock}</span></span>
+                      <span className="text-[10px] text-slate-400 font-mono">₹{p.price.toFixed(2)} | Stock: <span className={p.stock < 10 ? "text-rose-500 font-bold" : ""}>{p.stock}</span></span>
                     </div>
                   </div>
 
@@ -360,13 +360,13 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
             {/* CSS graph */}
             <div className="h-32 flex items-end gap-3.5 pt-4 font-mono text-[9px] font-bold text-slate-400">
               {[
-                { label: "Mon", val: 30, count: "$300" },
-                { label: "Tue", val: 55, count: "$550" },
-                { label: "Wed", val: 80, count: "$800" },
-                { label: "Thu", val: 40, count: "$400" },
-                { label: "Fri", val: 95, count: "$950" },
-                { label: "Sat", val: 65, count: "$650" },
-                { label: "Sun", val: 75, count: "$750" }
+                { label: "Mon", val: 30, count: "₹300" },
+                { label: "Tue", val: 55, count: "₹550" },
+                { label: "Wed", val: 80, count: "₹800" },
+                { label: "Thu", val: 40, count: "₹400" },
+                { label: "Fri", val: 95, count: "₹950" },
+                { label: "Sat", val: 65, count: "₹650" },
+                { label: "Sun", val: 75, count: "₹750" }
               ].map((bar, idx) => (
                 <div key={idx} className="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group cursor-pointer">
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-slate-900 text-white dark:bg-slate-800 px-1 py-0.5 rounded text-[8px] absolute mb-14">
@@ -506,7 +506,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="block font-bold text-slate-450 uppercase">Price ($)</label>
+                  <label className="block font-bold text-slate-450 uppercase">Price (₹)</label>
                   <input
                     type="number"
                     step="0.01"

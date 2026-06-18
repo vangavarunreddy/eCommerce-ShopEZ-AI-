@@ -165,7 +165,7 @@ export const Shop: React.FC<ShopProps> = ({ onNavigate }) => {
 
           {/* C. Price Filter */}
           <div className="space-y-1.5">
-            <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Price Range ($)</label>
+            <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Price Range (₹)</label>
             <div className="flex items-center gap-2">
               <input
                 type="number"
@@ -282,7 +282,7 @@ export const Shop: React.FC<ShopProps> = ({ onNavigate }) => {
                       </div>
 
                       <div className="flex items-center justify-between pt-1">
-                        <span className="text-base font-extrabold text-slate-900 dark:text-white font-mono">${p.price.toFixed(2)}</span>
+                        <span className="text-base font-extrabold text-slate-900 dark:text-white font-mono">₹{p.price.toFixed(2)}</span>
                         <span className="px-3 py-1.5 rounded-lg bg-teal-500/10 hover:bg-teal-500 hover:text-slate-950 text-teal-500 text-[10px] font-bold transition-all flex items-center gap-1">
                           <ShoppingBag className="w-3.5 h-3.5" /> Details
                         </span>

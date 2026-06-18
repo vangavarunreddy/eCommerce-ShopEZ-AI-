@@ -69,11 +69,15 @@
       "zip": "505",
       "country": "USA"
     },
-    "balance": 10100,
-    "wishlist": [
-      "prod_4"
+    "balance": 11100,
+    "wishlist": [],
+    "cart": [
+      {
+        "productId": "prod_4",
+        "quantity": 1,
+        "variant": "Titanium Gray"
+      }
     ],
-    "cart": [],
     "createdAt": "2026-06-17T10:20:52.604Z",
     "id": "usr_gpuz4pxuo"
   }

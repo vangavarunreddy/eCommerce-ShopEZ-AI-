@@ -246,8 +246,8 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
 
                   <div className="flex items-end justify-between pt-1">
                     <div>
-                      <span className="text-xs text-slate-400 line-through mr-1.5">${p.price.toFixed(2)}</span>
-                      <span className="text-base font-extrabold text-rose-500 font-mono">${discountPrice.toFixed(2)}</span>
+                      <span className="text-xs text-slate-400 line-through mr-1.5">₹{p.price.toFixed(2)}</span>
+                      <span className="text-base font-extrabold text-rose-500 font-mono">₹{discountPrice.toFixed(2)}</span>
                     </div>
                     <button
                       onClick={() => handleQuickAdd(p)}
@@ -318,7 +318,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                     </div>
 
                     <div className="flex items-center justify-between pt-1">
-                      <span className="text-base font-bold text-slate-900 dark:text-white font-mono">${p.price.toFixed(2)}</span>
+                      <span className="text-base font-bold text-slate-900 dark:text-white font-mono">₹{p.price.toFixed(2)}</span>
                       <button
                         onClick={() => onNavigate("product-detail", p.id)}
                         className="px-3.5 py-1.5 bg-slate-900 dark:bg-slate-800 hover:bg-teal-500 hover:text-slate-950 text-white font-bold text-[10px] rounded-lg cursor-pointer transition-all"
@@ -383,7 +383,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 </div>
 
                 <div className="flex items-center justify-between pt-1">
-                  <span className="text-base font-extrabold text-slate-900 dark:text-white font-mono">${p.price.toFixed(2)}</span>
+                  <span className="text-base font-extrabold text-slate-900 dark:text-white font-mono">₹{p.price.toFixed(2)}</span>
                   <span className="p-1.5 rounded-lg bg-teal-500/10 text-teal-500 group-hover:bg-teal-500 group-hover:text-slate-950 transition-colors">
                     <ShoppingBag className="w-3.5 h-3.5" />
                   </span>

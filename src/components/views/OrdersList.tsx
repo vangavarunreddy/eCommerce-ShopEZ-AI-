@@ -185,7 +185,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
 
                   <div className="flex items-center gap-4 justify-between sm:justify-end">
                     <div className="text-right">
-                      <span className="block font-bold font-mono text-sm">${o.totalAmount.toFixed(2)}</span>
+                      <span className="block font-bold font-mono text-sm">₹{o.totalAmount.toFixed(2)}</span>
                       <span className="text-[10px] text-slate-400 capitalize font-mono">Via {o.paymentMethod}</span>
                     </div>
 
@@ -219,7 +219,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                             </div>
                             <div className="text-right font-mono font-semibold">
                               <span>{p.quantity}x</span>
-                              <span className="ml-2">${(p.price * p.quantity).toFixed(2)}</span>
+                              <span className="ml-2">₹{(p.price * p.quantity).toFixed(2)}</span>
                             </div>
                           </div>
                         ))}
@@ -382,8 +382,8 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                           {item.variant && <span className="block text-[10px] text-slate-400 font-mono mt-0.5">Variant: {item.variant}</span>}
                         </td>
                         <td className="p-3 text-center font-semibold">{item.quantity}</td>
-                        <td className="p-3 text-right font-mono">${item.price.toFixed(2)}</td>
-                        <td className="p-3 text-right font-mono font-bold">${(item.price * item.quantity).toFixed(2)}</td>
+                        <td className="p-3 text-right font-mono">₹{item.price.toFixed(2)}</td>
+                        <td className="p-3 text-right font-mono font-bold">₹{(item.price * item.quantity).toFixed(2)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -395,15 +395,15 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                 <div className="w-full sm:w-64 space-y-2">
                   <div className="flex justify-between text-slate-500 dark:text-slate-400">
                     <span>Tax Subtotal</span>
-                    <span className="font-mono">${invoiceData.payment.subtotal.toFixed(2)}</span>
+                    <span className="font-mono">₹{invoiceData.payment.subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-slate-500 dark:text-slate-400">
                     <span>GST / VAT (18% mock)</span>
-                    <span className="font-mono">${invoiceData.payment.tax.toFixed(2)}</span>
+                    <span className="font-mono">₹{invoiceData.payment.tax.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between text-sm font-extrabold text-slate-900 dark:text-white border-t border-slate-250 dark:border-slate-800 pt-2">
                     <span>Total Paid</span>
-                    <span className="font-mono text-teal-600 dark:text-teal-400">${invoiceData.payment.total.toFixed(2)}</span>
+                    <span className="font-mono text-teal-600 dark:text-teal-400">₹{invoiceData.payment.total.toFixed(2)}</span>
                   </div>
                   <div className="text-right text-[10px] text-slate-400 mt-1">
                     <span>Paid via: {invoiceData.payment.method} ({invoiceData.payment.status})</span>

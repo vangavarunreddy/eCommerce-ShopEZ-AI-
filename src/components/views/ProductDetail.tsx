@@ -245,7 +245,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onBack,
           </div>
 
           <div className="flex items-baseline gap-2 border-t border-b border-slate-200/50 dark:border-slate-800/50 py-4">
-            <span className="text-3xl font-black text-slate-900 dark:text-white font-mono">${product.price.toFixed(2)}</span>
+            <span className="text-3xl font-black text-slate-900 dark:text-white font-mono">₹{product.price.toFixed(2)}</span>
             <span className="text-xs text-slate-400">excluding delivery charges</span>
           </div>
 
@@ -516,7 +516,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onBack,
                     <span className="text-[9px] text-slate-400 font-mono">{p.category} | {p.ratings} ★</span>
                   </div>
                   <div className="flex items-center justify-between mt-2 pt-1 border-t border-slate-100 dark:border-slate-800/80">
-                    <span className="text-xs font-bold text-slate-900 dark:text-white font-mono">${p.price.toFixed(2)}</span>
+                    <span className="text-xs font-bold text-slate-900 dark:text-white font-mono">₹{p.price.toFixed(2)}</span>
                     <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                 </div>

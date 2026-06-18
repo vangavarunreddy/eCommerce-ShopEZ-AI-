@@ -53,7 +53,7 @@ router.post("/chat", async (req, res) => {
     // Capture current store catalog for context
     const products = await db.getProducts();
     const catalogContext = products.map(
-      (p) => `- ID: ${p.id}, Title: ${p.title}, Category: ${p.category}, Price: $${p.price}, Rating: ${p.ratings}/5, Stock: ${p.stock} units, Variants: ${p.variants.join(", ")}`
+      (p) => `- ID: ${p.id}, Title: ${p.title}, Category: ${p.category}, Price: ₹${p.price}, Rating: ${p.ratings}/5, Stock: ${p.stock} units, Variants: ${p.variants.join(", ")}`
     ).join("\n");
 
     const systemPrompt = `You are "ShopEZ AI Professional Shopping Advisor", an elite shopping coach on the ShopEZ AI E-Commerce platform.
@@ -105,26 +105,26 @@ Keep your responses structured, clear, and in pretty markdown format. If running
 
     if (input.includes("keyboard") || input.includes("mechanical")) {
       const kb = products.find(p => p.title.toLowerCase().includes("keyboard"));
-      reply += `The **Viper Pro Mech Wireless Keyboard** is available in our store for **$${kb?.price || 129.99}**.\n\n` +
+      reply += `The **Viper Pro Mech Wireless Keyboard** is available in our store for **₹${kb?.price || 129.99}**.\n\n` +
         `- **Key Features:** Hot-swappable tactile brown switches, double-shot PBT keycaps, and customizable RGB backlighting.\n` +
         `- **Variants:** Carbon Black and Mercury White.\n` +
         `- **Stock:** ${kb?.stock || 45} units left.\n\n` +
         `Would you like me to compare this keyboard with other products, or help you add it to your cart?`;
     } else if (input.includes("earbud") || input.includes("headphone") || input.includes("sound")) {
       const eb = products.find(p => p.title.toLowerCase().includes("earbud"));
-      reply += `We offer the premium **Aura Sound canceling Earbuds** for **$${eb?.price || 189.50}**.\n\n` +
+      reply += `We offer the premium **Aura Sound canceling Earbuds** for **₹${eb?.price || 189.50}**.\n\n` +
         `- **Specs:** Adaptive ANC (Active Noise Cancellation), 11mm dynamic drivers, and 36-hour aggregate battery case capacity.\n` +
         `- **Colors:** Midnight Blue and Platinum Silver.\n\n` +
         `They are highly recommended for focus, study sessions, and workouts!`;
     } else if (input.includes("watch") || input.includes("smart watch")) {
       const watch = products.find(p => p.title.toLowerCase().includes("watch"));
-      reply += `The **Apex Horizon Smart Watch Pro** retails at **$${watch?.price || 249.00}**.\n\n` +
+      reply += `The **Apex Horizon Smart Watch Pro** retails at **₹${watch?.price || 249.00}**.\n\n` +
         `- **Health Sensors:** Heart rate tracker, blood oxygen sensor (SpO2), active sleep monitoring, and dual-frequency GPS tracker.\n` +
         `- **Colors:** Titanium Gray and Rose Gold.\n` +
         `- **Battery:** Up to 14 days of standalone battery efficiency.\n\n` +
         `It's currently one of our best sellers for sports tracking!`;
     } else if (input.includes("bag") || input.includes("satchel") || input.includes("leather")) {
-      reply += `Yes! The **Heritage Full-Grain Leather Satchel ($175.00)** is handcrafted from vegetable-tanned full-grain leather.\n\n` +
+      reply += `Yes! The **Heritage Full-Grain Leather Satchel (₹175.00)** is handcrafted from vegetable-tanned full-grain leather.\n\n` +
         `- Fits laptops up to 16 inches.\n` +
         `- Features heavy-duty brass buckles and a detachable padded shoulder harness.\n` +
         `It is the perfect choice for professional meetings and office travel.`;
@@ -170,7 +170,7 @@ router.get("/recommend", requireAuth, async (req: AuthenticatedRequest, res) => 
     Past Purchase Categories: [${pastPurchaseCategories.join(", ")}]
     `;
 
-    const catalogString = products.map(p => `ID: ${p.id}, Title: ${p.title}, Category: ${p.category}, Price: $${p.price}, Rating: ${p.ratings}`).join("\n");
+    const catalogString = products.map(p => `ID: ${p.id}, Title: ${p.title}, Category: ${p.category}, Price: ₹${p.price}, Rating: ${p.ratings}`).join("\n");
 
     const systemPrompt = `You are a Smart Product Recommender system for ShopEZ AI.
 Analyze the user's behavior history:
@@ -265,7 +265,7 @@ router.post("/compare", async (req, res) => {
 
     const comparisonData = products.map(p => `
     Title: ${p.title}
-    Price: $${p.price}
+    Price: ₹${p.price}
     Category: ${p.category}
     Rating: ${p.ratings}
     Stock: ${p.stock}
@@ -310,7 +310,7 @@ Ensure the comparison is engaging, highly objective, and readable.`;
     // Markdown table
     report += `| Specification | ${products[0].title} | ${products[1].title} |\n`;
     report += `| :--- | :--- | :--- |\n`;
-    report += `| **Price** | $${products[0].price} | $${products[1].price} |\n`;
+    report += `| **Price** | ₹${products[0].price} | ₹${products[1].price} |\n`;
     report += `| **Category** | ${products[0].category} | ${products[1].category} |\n`;
     report += `| **Rating** | ${products[0].ratings} / 5 ⭐ | ${products[1].ratings} / 5 ⭐ |\n`;
     report += `| **Stock Status** | ${products[0].stock > 0 ? "In Stock" : "Out of Stock"} | ${products[1].stock > 0 ? "In Stock" : "Out of Stock"} |\n`;
@@ -325,10 +325,10 @@ Ensure the comparison is engaging, highly objective, and readable.`;
 
     report += `#### 🏆 ShopEZ Recommendation Verdict\n`;
     if (products[0].price < products[1].price) {
-      report += `- **Value Option:** **${products[0].title}** represents the optimal value choice, saving you $${parseFloat((products[1].price - products[0].price).toFixed(2))} while offering stellar utility.\n`;
+      report += `- **Value Option:** **${products[0].title}** represents the optimal value choice, saving you ₹${parseFloat((products[1].price - products[0].price).toFixed(2))} while offering stellar utility.\n`;
       report += `- **Premium Option:** **${products[1].title}** is suited for power users who demand top tier features and do not mind paying a premium.`;
     } else {
-      report += `- **Value Option:** **${products[1].title}** is the budget friendly choice, saving you $${parseFloat((products[0].price - products[1].price).toFixed(2))}.\n`;
+      report += `- **Value Option:** **${products[1].title}** is the budget friendly choice, saving you ₹${parseFloat((products[0].price - products[1].price).toFixed(2))}.\n`;
       report += `- **Premium Option:** **${products[0].title}** offers supreme performance for users seeking the absolute best specs.`;
     }
 
@@ -523,7 +523,7 @@ router.get("/insights", requireSeller, async (req: AuthenticatedRequest, res) =>
 
     const dataReport = `
     Business Role: ${userRole}
-    Revenue: $${totalRevenue.toLocaleString()}
+    Revenue: ₹${totalRevenue.toLocaleString()}
     Products Managed: ${targetProducts.length}
     Low Stock Alert Count: ${lowStockCount}
     Total Orders Registered: ${targetOrders.length}
@@ -563,7 +563,7 @@ Make the report professional, analytical, and highly insightful.`;
     // High fidelity simulation
     let report = `### 📊 AI Retail Operations Diagnostic (Offline Mode)\n\n`;
     report += `#### 1. Performance Verdict\n`;
-    report += `Your ${userRole === "ADMIN" ? "Platform-wide" : "Store"} operations are running at a **Healthy** status. Total revenue generated to date is **$${totalRevenue.toLocaleString()}** across **${targetOrders.length} orders**.\n\n`;
+    report += `Your ${userRole === "ADMIN" ? "Platform-wide" : "Store"} operations are running at a **Healthy** status. Total revenue generated to date is **₹${totalRevenue.toLocaleString()}** across **${targetOrders.length} orders**.\n\n`;
 
     report += `#### 2. Inventory Restocking Alerts\n`;
     if (lowStockCount > 0) {
@@ -573,7 +573,7 @@ Make the report professional, analytical, and highly insightful.`;
     }
 
     report += `#### 3. Seller Growth Strategies\n`;
-    report += `- **Price Benchmarking:** Standardize prices in line with historical averages. Dynamic category sorting shows high conversion rates for items priced between $50 and $150.\n`;
+    report += `- **Price Benchmarking:** Standardize prices in line with historical averages. Dynamic category sorting shows high conversion rates for items priced between ₹50 and ₹150.\n`;
     report += `- **Bundle Promotions:** Consider bundling slower-moving items with highly rated electronics like the *Viper Wireless Keyboard* using coupon incentives (e.g. *SHOPEZAI20*) to clear warehouse space.\n\n`;
 
     if (userRole === "ADMIN") {

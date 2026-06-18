@@ -273,8 +273,8 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
 
                 {/* Subtotal Item Cost */}
                 <div className="text-right">
-                  <span className="block font-bold font-mono text-sm">${(item.product.price * item.quantity).toFixed(2)}</span>
-                  <span className="text-[10px] text-slate-400 font-mono">${item.product.price.toFixed(2)} each</span>
+                  <span className="block font-bold font-mono text-sm">₹{(item.product.price * item.quantity).toFixed(2)}</span>
+                  <span className="text-[10px] text-slate-400 font-mono">₹{item.product.price.toFixed(2)} each</span>
                 </div>
 
                 {/* Trash Delete */}
@@ -371,13 +371,13 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
           <div className="space-y-2.5 text-xs font-semibold">
             <div className="flex justify-between text-slate-500 dark:text-slate-400">
               <span>Items Subtotal</span>
-              <span className="font-mono">${getCartSubtotal().toFixed(2)}</span>
+              <span className="font-mono">₹{getCartSubtotal().toFixed(2)}</span>
             </div>
             
             {activeCoupon && (
               <div className="flex justify-between text-teal-600 dark:text-teal-400 bg-teal-500/10 px-2 py-1 rounded">
                 <span className="flex items-center gap-1"><Gift className="w-3.5 h-3.5" /> Code: {activeCoupon.code} (-{activeCoupon.discountPercentage}%)</span>
-                <span className="font-mono">-${getDiscountAmount().toFixed(2)}</span>
+                <span className="font-mono">-₹{getDiscountAmount().toFixed(2)}</span>
               </div>
             )}
 
@@ -388,7 +388,7 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
 
             <div className="flex justify-between text-base font-extrabold border-t border-slate-100 dark:border-slate-800 pt-3 text-slate-900 dark:text-white">
               <span>Total Cost</span>
-              <span className="font-mono">${getCartTotal().toFixed(2)}</span>
+              <span className="font-mono">₹{getCartTotal().toFixed(2)}</span>
             </div>
           </div>
 
@@ -463,7 +463,7 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
             className="w-full py-3.5 bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-extrabold text-xs rounded-xl shadow-lg hover:shadow-teal-500/20 cursor-pointer disabled:opacity-50 transition-all flex items-center justify-center gap-1.5"
           >
             <Lock className="w-4 h-4" />
-            {submittingCheckout ? "Processing checkout order..." : `Place Order ($${getCartTotal().toFixed(2)})`}
+            {submittingCheckout ? "Processing checkout order..." : `Place Order (₹${getCartTotal().toFixed(2)})`}
           </button>
 
           <p className="text-[10px] text-slate-400 text-center flex items-center justify-center gap-1 leading-none font-semibold">
@@ -498,8 +498,7 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
               <div className="flex justify-between items-baseline pt-2">
                 <span className="text-[11px] opacity-80">Order Amount:</span>
                 <span className="text-xl font-bold font-mono">
-                  ₹{Math.round(getCartTotal() * 83).toLocaleString()}
-                  <span className="text-xs opacity-75 ml-1">(${getCartTotal().toFixed(2)})</span>
+                  ₹{Math.round(getCartTotal()).toLocaleString()}
                 </span>
               </div>
             </div>
@@ -552,7 +551,7 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
                   {/* Generated QR Code Container */}
                   <div className="w-36 h-36 border border-slate-200 dark:border-slate-800 rounded-xl mx-auto flex items-center justify-center p-2 bg-white relative group">
                     <img 
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=shopezai@ybl%26pn=ShopEZ%2520AI%26am=${Math.round(getCartTotal() * 83)}%26cu=INR`} 
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=shopezai@ybl%26pn=ShopEZ%2520AI%26am=${Math.round(getCartTotal())}%26cu=INR`} 
                       alt="UPI Payment QR Code" 
                       className="w-full h-full object-contain"
                     />
