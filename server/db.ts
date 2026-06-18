@@ -530,6 +530,66 @@ class ShopEZDatabase {
           sellerName: "Viper Electronics Store",
           ratings: 4.5,
           createdAt: new Date(Date.now() - 7 * 24 * 3600000).toISOString()
+        },
+        {
+          title: "AuraShield Pro Glass Protector",
+          description: "Ultra-tough 9H tempered glass screen protector with oleophobic coating, smudge resistance, and perfect touch sensitivity. Includes a precise alignment frame for bubble-free application.",
+          price: 399.00,
+          category: "Accessories",
+          images: [
+            "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&auto=format&fit=crop"
+          ],
+          variants: ["Clear Glossy", "Matte Anti-Glare"],
+          stock: 200,
+          sellerId: sellerId,
+          sellerName: "Viper Electronics Store",
+          ratings: 4.6,
+          createdAt: new Date(Date.now() - 9 * 24 * 3600000).toISOString()
+        },
+        {
+          title: "Nomad 100W Rugged USB-C Cable",
+          description: "Double-braided nylon charging cable supporting up to 100W Power Delivery and high-speed data sync. Features reinforced strain relief collars and integrated leather cable tie.",
+          price: 799.00,
+          category: "Accessories",
+          images: [
+            "https://images.unsplash.com/photo-1541660724482-628c679277a1?w=600&auto=format&fit=crop"
+          ],
+          variants: ["Stealth Grey", "Desert Sand"],
+          stock: 150,
+          sellerId: sellerId,
+          sellerName: "Viper Electronics Store",
+          ratings: 4.7,
+          createdAt: new Date(Date.now() - 11 * 24 * 3600000).toISOString()
+        },
+        {
+          title: "Equinox Ergonomic Office Chair",
+          description: "A premium office chair featuring a high-back breathable mesh design, dynamic lumbar support, 3D adjustable armrests, and a multi-angle tilt lock mechanism. Engineered for long posture-perfect comfort.",
+          price: 12999.00,
+          category: "Furniture",
+          images: [
+            "https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?w=600&auto=format&fit=crop"
+          ],
+          variants: ["Classic Black", "Arctic White Mesh"],
+          stock: 15,
+          sellerId: sellerId,
+          sellerName: "Viper Electronics Store",
+          ratings: 4.8,
+          createdAt: new Date(Date.now() - 1 * 24 * 3600000).toISOString()
+        },
+        {
+          title: "HydroGlow Smart Humidifier",
+          description: "An ultrasonic cool mist humidifier with a 3L tank, multi-color LED ambient lighting, integrated essential oil diffuser, and smart auto-humidity sensors. Super quiet operation for work or sleep.",
+          price: 2499.00,
+          category: "Home Decor",
+          images: [
+            "https://images.unsplash.com/photo-1519183071298-a2962feb14f4?w=600&auto=format&fit=crop"
+          ],
+          variants: ["Pure White", "Slate Woodgrain"],
+          stock: 40,
+          sellerId: sellerId,
+          sellerName: "Viper Electronics Store",
+          ratings: 4.4,
+          createdAt: new Date(Date.now() - 2 * 24 * 3600000).toISOString()
         }
       ];
 

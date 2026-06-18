@@ -14,7 +14,13 @@
     "phone": "+1-555-0199",
     "balance": 8500,
     "wishlist": [],
-    "cart": [],
+    "cart": [
+      {
+        "productId": "prod_2",
+        "quantity": 1,
+        "variant": "Midnight Blue"
+      }
+    ],
     "createdAt": "2026-06-18T08:18:18.116Z",
     "id": "usr_1"
   },

@@ -16,7 +16,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.8,
-    "createdAt": "2026-06-13T08:18:18.118Z",
+    "createdAt": "2026-06-13T08:24:41.262Z",
     "id": "prod_1"
   },
   {
@@ -36,7 +36,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.6,
-    "createdAt": "2026-06-15T08:18:18.118Z",
+    "createdAt": "2026-06-15T08:24:41.264Z",
     "id": "prod_2"
   },
   {
@@ -57,7 +57,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.5,
-    "createdAt": "2026-06-08T08:18:18.118Z",
+    "createdAt": "2026-06-08T08:24:41.264Z",
     "id": "prod_3"
   },
   {
@@ -77,7 +77,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.7,
-    "createdAt": "2026-06-16T08:18:18.118Z",
+    "createdAt": "2026-06-16T08:24:41.264Z",
     "id": "prod_4"
   },
   {
@@ -96,7 +96,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.9,
-    "createdAt": "2026-06-03T08:18:18.119Z",
+    "createdAt": "2026-06-03T08:24:41.264Z",
     "id": "prod_5"
   },
   {
@@ -116,7 +116,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.2,
-    "createdAt": "2026-06-06T08:18:18.119Z",
+    "createdAt": "2026-06-06T08:24:41.264Z",
     "id": "prod_6"
   },
   {
@@ -134,7 +134,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.6,
-    "createdAt": "2026-06-14T08:18:18.119Z",
+    "createdAt": "2026-06-14T08:24:41.264Z",
     "id": "prod_7"
   },
   {
@@ -153,7 +153,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.4,
-    "createdAt": "2026-06-12T08:18:18.119Z",
+    "createdAt": "2026-06-12T08:24:41.264Z",
     "id": "prod_8"
   },
   {
@@ -172,7 +172,7 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.7,
-    "createdAt": "2026-06-10T08:18:18.119Z",
+    "createdAt": "2026-06-10T08:24:41.264Z",
     "id": "prod_9"
   },
   {
@@ -191,7 +191,83 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.5,
-    "createdAt": "2026-06-11T08:18:18.119Z",
+    "createdAt": "2026-06-11T08:24:41.264Z",
     "id": "prod_10"
+  },
+  {
+    "title": "AuraShield Pro Glass Protector",
+    "description": "Ultra-tough 9H tempered glass screen protector with oleophobic coating, smudge resistance, and perfect touch sensitivity. Includes a precise alignment frame for bubble-free application.",
+    "price": 399,
+    "category": "Accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Clear Glossy",
+      "Matte Anti-Glare"
+    ],
+    "stock": 200,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.6,
+    "createdAt": "2026-06-09T08:24:41.264Z",
+    "id": "prod_11"
+  },
+  {
+    "title": "Nomad 100W Rugged USB-C Cable",
+    "description": "Double-braided nylon charging cable supporting up to 100W Power Delivery and high-speed data sync. Features reinforced strain relief collars and integrated leather cable tie.",
+    "price": 799,
+    "category": "Accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1541660724482-628c679277a1?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Stealth Grey",
+      "Desert Sand"
+    ],
+    "stock": 150,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.7,
+    "createdAt": "2026-06-07T08:24:41.264Z",
+    "id": "prod_12"
+  },
+  {
+    "title": "Equinox Ergonomic Office Chair",
+    "description": "A premium office chair featuring a high-back breathable mesh design, dynamic lumbar support, 3D adjustable armrests, and a multi-angle tilt lock mechanism. Engineered for long posture-perfect comfort.",
+    "price": 12999,
+    "category": "Furniture",
+    "images": [
+      "https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Classic Black",
+      "Arctic White Mesh"
+    ],
+    "stock": 15,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.8,
+    "createdAt": "2026-06-17T08:24:41.264Z",
+    "id": "prod_13"
+  },
+  {
+    "title": "HydroGlow Smart Humidifier",
+    "description": "An ultrasonic cool mist humidifier with a 3L tank, multi-color LED ambient lighting, integrated essential oil diffuser, and smart auto-humidity sensors. Super quiet operation for work or sleep.",
+    "price": 2499,
+    "category": "Home Decor",
+    "images": [
+      "https://images.unsplash.com/photo-1519183071298-a2962feb14f4?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Pure White",
+      "Slate Woodgrain"
+    ],
+    "stock": 40,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.4,
+    "createdAt": "2026-06-16T08:24:41.264Z",
+    "id": "prod_14"
   }
 ]
