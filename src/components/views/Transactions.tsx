@@ -77,7 +77,7 @@ export const Transactions: React.FC = () => {
                   const totalCapital = tx.price * tx.quantity;
 
                   return (
-                    <tr key={tx.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-850/20 transition-colors">
+                    <tr key={tx.id} className="hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
                       {/* ID */}
                       <td className="px-6 py-4 font-mono font-medium text-slate-500 text-[10px]">
                         {tx.id.toUpperCase()}

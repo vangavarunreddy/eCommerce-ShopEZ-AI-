@@ -231,7 +231,7 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
             >
               <div className="flex items-center gap-4">
                 <div 
-                  className="w-20 h-20 rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-850 shrink-0 border border-slate-200/50 dark:border-slate-800/50 cursor-pointer"
+                  className="w-20 h-20 rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0 border border-slate-200/50 dark:border-slate-800/50 cursor-pointer"
                   onClick={() => onNavigate("product-detail", item.productId)}
                 >
                   <img src={item.product.images[0]} alt={item.product.title} className="w-full h-full object-cover" />
@@ -258,14 +258,14 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
                 <div className="flex items-center border border-slate-250 dark:border-slate-800 rounded-lg overflow-hidden bg-white dark:bg-slate-950 text-xs">
                   <button
                     onClick={() => updateCartQty(item.productId, item.variant, item.quantity - 1)}
-                    className="px-2 py-1 font-bold hover:bg-slate-50 dark:hover:bg-slate-850 cursor-pointer"
+                    className="px-2 py-1 font-bold hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer"
                   >
                     -
                   </button>
                   <span className="px-3 font-mono font-bold">{item.quantity}</span>
                   <button
                     onClick={() => updateCartQty(item.productId, item.variant, item.quantity + 1)}
-                    className="px-2 py-1 font-bold hover:bg-slate-50 dark:hover:bg-slate-850 cursor-pointer"
+                    className="px-2 py-1 font-bold hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer"
                   >
                     +
                   </button>

@@ -307,7 +307,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onBack,
                     </button>
                     <button
                       onClick={handleBuyNow}
-                      className="flex-1 py-3 bg-slate-900 dark:bg-slate-850 hover:bg-teal-500 hover:text-slate-950 text-white font-bold text-xs rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5"
+                      className="flex-1 py-3 bg-slate-900 dark:bg-slate-800 hover:bg-teal-500 hover:text-slate-950 text-white font-bold text-xs rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5"
                     >
                       <Zap className="w-3.5 h-3.5" /> Buy Now
                     </button>
@@ -423,7 +423,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onBack,
                   placeholder="Share details of your experience with this product..."
                   value={newComment}
                   onChange={(e) => setNewComment(e.target.value)}
-                  className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 p-3 text-xs focus:outline-none focus:border-teal-500"
+                  className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 p-3 text-xs focus:outline-none focus:border-teal-500"
                   required
                 />
               </div>
@@ -503,7 +503,7 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ productId, onBack,
                 onClick={() => onNavigate("product-detail", p.id)}
                 className="flex flex-col rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 overflow-hidden group shadow-sm hover:shadow transition-all cursor-pointer"
               >
-                <div className="h-36 w-full bg-slate-100 dark:bg-slate-850 overflow-hidden relative">
+                <div className="h-36 w-full bg-slate-100 dark:bg-slate-800 overflow-hidden relative">
                   <img
                     src={p.images[0]}
                     alt={p.title}

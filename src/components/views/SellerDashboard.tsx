@@ -317,7 +317,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                   className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 p-4 rounded-xl flex items-center justify-between gap-4 shadow-sm"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-850 overflow-hidden shrink-0 border border-slate-200/30">
+                    <div className="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 overflow-hidden shrink-0 border border-slate-200/30">
                       <img src={p.images[0]} alt={p.title} className="w-full h-full object-cover" />
                     </div>
                     <div>
@@ -487,7 +487,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="E.g., Viper Pro Wireless Mouse"
-                  className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                   required
                 />
               </div>
@@ -499,7 +499,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Describe specifications, build materials, warranty details..."
-                  className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 p-3 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 p-3 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                   required
                 />
               </div>
@@ -513,7 +513,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     placeholder="99.99"
-                    className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white font-mono"
+                    className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white font-mono"
                     required
                   />
                 </div>
@@ -524,7 +524,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                     placeholder="25"
-                    className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white font-mono"
+                    className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white font-mono"
                     required
                   />
                 </div>
@@ -536,7 +536,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                   <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                    className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                   >
                     <option value="Electronics">Electronics</option>
                     <option value="Footwear">Footwear</option>
@@ -550,7 +550,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                     value={variantsStr}
                     onChange={(e) => setVariantsStr(e.target.value)}
                     placeholder="Red, Blue, 8GB RAM"
-                    className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                    className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                   />
                 </div>
               </div>
@@ -562,7 +562,7 @@ export const SellerDashboard: React.FC<{ onNavigate: (view: string, arg?: string
                   value={imgUrl}
                   onChange={(e) => setImgUrl(e.target.value)}
                   placeholder="https://images.unsplash.com/photo-..."
-                  className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                  className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                 />
               </div>
 

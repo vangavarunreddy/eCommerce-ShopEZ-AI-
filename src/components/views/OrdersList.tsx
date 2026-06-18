@@ -189,7 +189,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                       <span className="text-[10px] text-slate-400 capitalize font-mono">Via {o.paymentMethod}</span>
                     </div>
 
-                    <div className="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-850">
+                    <div className="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
                       {isExpanded ? <ChevronUp className="w-4.5 h-4.5 text-slate-450" /> : <ChevronDown className="w-4.5 h-4.5 text-slate-455" />}
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
 
                 {/* Expanded Details */}
                 {isExpanded && (
-                  <div className="border-t border-slate-100 dark:border-slate-850 p-5 bg-slate-50/50 dark:bg-slate-950/20 space-y-6">
+                  <div className="border-t border-slate-100 dark:border-slate-800 p-5 bg-slate-50/50 dark:bg-slate-950/20 space-y-6">
                     
                     {/* Products details */}
                     <div className="space-y-3">
@@ -227,7 +227,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                     </div>
 
                     {/* Shipping and Delivery parameters */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs border-t border-slate-100 dark:border-slate-850 pt-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs border-t border-slate-100 dark:border-slate-800 pt-4">
                       
                       <div className="space-y-1.5">
                         <h4 className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-display">Shipping Details</h4>
@@ -259,7 +259,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                     </div>
 
                     {/* Actions panel */}
-                    <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-855 pt-4">
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800 pt-4">
                       <div className="flex gap-2">
                         {o.status === "PLACED" && (
                           <button
@@ -321,7 +321,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                   alert("Invoice download triggered! (Saved as PDF on local drive mockup)");
                   setInvoiceData(null);
                 }}
-                className="px-4 py-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-850 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-350 font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer"
+                className="px-4 py-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-350 font-bold text-xs rounded-xl flex items-center gap-1.5 cursor-pointer"
               >
                 <FileDown className="w-4 h-4 text-slate-455" /> Save PDF
               </button>
@@ -361,10 +361,10 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
               </div>
 
               {/* Items ledger */}
-              <div className="border border-slate-200/50 dark:border-slate-850 rounded-xl overflow-hidden">
+              <div className="border border-slate-200/50 dark:border-slate-800 rounded-xl overflow-hidden">
                 <table className="w-full text-left border-collapse text-xs">
                   <thead>
-                    <tr className="bg-slate-100 dark:bg-slate-850 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200/50 dark:border-slate-800">
+                    <tr className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200/50 dark:border-slate-800">
                       <th className="p-3">Product Description</th>
                       <th className="p-3 text-center">Qty</th>
                       <th className="p-3 text-right">Unit Price</th>
@@ -375,7 +375,7 @@ export const OrdersList: React.FC<{ onNavigate: (view: string) => void }> = ({ o
                     {invoiceData.items.map((item: any, idx: number) => (
                       <tr 
                         key={idx}
-                        className="border-b border-slate-100 dark:border-slate-850 text-slate-800 dark:text-slate-250 bg-white dark:bg-slate-900"
+                        className="border-b border-slate-100 dark:border-slate-800 text-slate-800 dark:text-slate-250 bg-white dark:bg-slate-900"
                       >
                         <td className="p-3">
                           <span className="font-bold">{item.title}</span>

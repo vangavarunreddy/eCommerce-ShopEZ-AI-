@@ -204,7 +204,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onNavigate, onRefresh }) =
                     <tr
                       key={h.symbol}
                       onClick={() => onNavigate("stock-detail", h.symbol)}
-                      className="hover:bg-slate-50 dark:hover:bg-slate-850/40 cursor-pointer transition"
+                      className="hover:bg-slate-50 dark:hover:bg-slate-800/40 cursor-pointer transition"
                     >
                       {/* Asset identifier */}
                       <td className="px-6 py-4">

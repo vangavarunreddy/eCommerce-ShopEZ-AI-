@@ -305,7 +305,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
             <div className="overflow-x-auto text-xs">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-slate-50 dark:bg-slate-850 border-b border-slate-200 dark:border-slate-800 text-slate-500 font-bold">
+                  <tr className="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-800 text-slate-500 font-bold">
                     <th className="p-3">User</th>
                     <th className="p-3">Role</th>
                     <th className="p-3 text-right">Balance</th>
@@ -314,7 +314,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
                 </thead>
                 <tbody>
                   {usersList.map((u) => (
-                    <tr key={u.id} className="border-b border-slate-100 dark:border-slate-850 hover:bg-slate-50/50 dark:hover:bg-slate-800/20">
+                    <tr key={u.id} className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50/50 dark:hover:bg-slate-800/20">
                       <td className="p-3">
                         <span className="font-bold block">{u.name}</span>
                         <span className="text-[10px] text-slate-450 font-mono">{u.email}</span>
@@ -396,7 +396,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
                 value={annTitle}
                 onChange={(e) => setAnnTitle(e.target.value)}
                 placeholder="E.g., Scheduled Maintenance"
-                className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-850 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3.5 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                 required
               />
             </div>
@@ -408,7 +408,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
                 value={annContent}
                 onChange={(e) => setAnnContent(e.target.value)}
                 placeholder="Details of the announcement notice..."
-                className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-850 p-3 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 p-3 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
                 required
               />
             </div>
@@ -418,7 +418,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
               <select
                 value={annCategory}
                 onChange={(e) => setAnnCategory(e.target.value as any)}
-                className="w-full bg-slate-50 dark:bg-slate-855 rounded-xl border border-slate-200 dark:border-slate-850 px-3 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
+                className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-800 px-3 py-2 focus:outline-none focus:border-teal-500 text-slate-900 dark:text-white"
               >
                 <option value="system">System Notification</option>
                 <option value="news">Global Retail News</option>
@@ -522,7 +522,7 @@ export const Admin: React.FC<{ onNavigate: (view: string) => void }> = ({ onNavi
                     step="0.01"
                     value={customBalance}
                     onChange={(e) => setCustomBalance(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-250 dark:border-slate-800 pl-8 pr-4 py-2.5 font-bold font-mono text-lg text-slate-900 dark:text-white"
+                    className="w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-250 dark:border-slate-800 pl-8 pr-4 py-2.5 font-bold font-mono text-lg text-slate-900 dark:text-white"
                     required
                   />
                 </div>

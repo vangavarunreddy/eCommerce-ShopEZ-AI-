@@ -198,7 +198,7 @@ export const AIAssistant: React.FC<{ onNavigate?: (view: string, arg?: string) =
         if (data.products && data.products.length > 0) {
           replyText += `Here are the matching **${data.category}** items I found in our warehouse:\n\n`;
           data.products.forEach((p: Product) => {
-            replyText += `- **${p.title}** ($${p.price.toFixed(2)}) — Rated ${p.ratings} ⭐\n`;
+            replyText += `- **${p.title}** (₹${p.price.toFixed(2)}) — Rated ${p.ratings} ⭐\n`;
           });
           replyText += `\n*Double-click product titles inside the Shop grid to buy!*`;
         } else {
@@ -312,7 +312,7 @@ export const AIAssistant: React.FC<{ onNavigate?: (view: string, arg?: string) =
                 className={`p-3.5 rounded-2xl text-xs leading-relaxed font-sans ${
                   m.sender === "user"
                     ? "bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-tr-none shadow-sm"
-                    : "bg-slate-50 dark:bg-slate-850 border border-slate-200/40 dark:border-slate-800/50 rounded-tl-none text-slate-800 dark:text-slate-200"
+                    : "bg-slate-50 dark:bg-slate-800 border border-slate-200/40 dark:border-slate-800/50 rounded-tl-none text-slate-800 dark:text-slate-200"
                 } ${m.comparisonReport ? "w-full md:w-[480px] overflow-x-auto" : ""}`}
               >
                 {/* Simple Markdown Renderer Mock */}
@@ -336,7 +336,7 @@ export const AIAssistant: React.FC<{ onNavigate?: (view: string, arg?: string) =
               className={`px-3 py-2 rounded-xl text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer ${
                 isRecording 
                   ? "bg-rose-500 text-white animate-pulse" 
-                  : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:border-violet-500/50 hover:text-violet-500 dark:hover:text-violet-400 hover:bg-slate-50 dark:hover:bg-slate-850"
+                  : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:border-violet-500/50 hover:text-violet-500 dark:hover:text-violet-400 hover:bg-slate-50 dark:hover:bg-slate-800"
               }`}
             >
               {isRecording ? <MicOff className="w-3.5 h-3.5" /> : <Mic className="w-3.5 h-3.5 text-violet-500" />}
@@ -345,7 +345,7 @@ export const AIAssistant: React.FC<{ onNavigate?: (view: string, arg?: string) =
 
             <button
               onClick={() => setImagePopupOpen(true)}
-              className="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:border-violet-500/50 hover:text-violet-500 dark:hover:text-violet-400 hover:bg-slate-50 dark:hover:bg-slate-850 flex items-center gap-1.5 cursor-pointer transition-all"
+              className="px-3 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:border-violet-500/50 hover:text-violet-500 dark:hover:text-violet-400 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-1.5 cursor-pointer transition-all"
             >
               <ImageIcon className="w-3.5 h-3.5 text-violet-500" />
               <span>Image Match</span>
@@ -477,7 +477,7 @@ export const AIAssistant: React.FC<{ onNavigate?: (view: string, arg?: string) =
                 <div
                   key={sample.id}
                   onClick={() => handleSelectSampleImage(sample.id)}
-                  className="bg-slate-50 dark:bg-slate-850 hover:bg-violet-500/10 border border-slate-200/50 dark:border-slate-800/80 p-2.5 rounded-xl cursor-pointer hover:border-violet-500 flex items-center gap-2.5 transition-all text-xs"
+                  className="bg-slate-50 dark:bg-slate-800 hover:bg-violet-500/10 border border-slate-200/50 dark:border-slate-800/80 p-2.5 rounded-xl cursor-pointer hover:border-violet-500 flex items-center gap-2.5 transition-all text-xs"
                 >
                   <div className="w-10 h-10 rounded-lg overflow-hidden shrink-0 border border-slate-200/30 bg-white dark:bg-slate-900">
                     <img src={sample.icon} alt={sample.label} className="w-full h-full object-cover" />
