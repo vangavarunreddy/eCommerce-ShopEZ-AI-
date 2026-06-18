@@ -2,7 +2,7 @@
   {
     "name": "Alice Smith",
     "email": "customer@shopez.com",
-    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOZ.0JVOP89dC18k4hW2AammoJpKF28xq",
+    "passwordHash": "$2b$10$EEOgWjnR412Noe7ww8bIFessIY7BjXiJOMSJtKpMsDAxlUDLzkti2",
     "role": "CUSTOMER",
     "address": {
       "street": "123 Smart Alley",
@@ -15,13 +15,13 @@
     "balance": 8500,
     "wishlist": [],
     "cart": [],
-    "createdAt": "2026-06-17T07:55:23.071Z",
+    "createdAt": "2026-06-18T08:18:18.116Z",
     "id": "usr_1"
   },
   {
     "name": "Viper Electronics Store",
     "email": "seller@shopez.com",
-    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOT8f.92sfgJ5ZMx3YWHaHyjlOxwdvTEa",
+    "passwordHash": "$2b$10$EEOgWjnR412Noe7ww8bIFelyjUgWWBlDqkZscZW6K87mFUijaxrHO",
     "role": "SELLER",
     "address": {
       "street": "456 Vendor Plaza",
@@ -34,13 +34,13 @@
     "balance": 25000,
     "wishlist": [],
     "cart": [],
-    "createdAt": "2026-06-17T07:55:23.072Z",
+    "createdAt": "2026-06-18T08:18:18.117Z",
     "id": "usr_2"
   },
   {
     "name": "ShopEZ Admin Core",
     "email": "admin@shopez.com",
-    "passwordHash": "$2b$10$7zaYp0eZ/RvKofBLo5eMFOikSvha7rTdfMk6jSHnwhFzSegKgEm8m",
+    "passwordHash": "$2b$10$EEOgWjnR412Noe7ww8bIFeK4ZqSmmPAmbixib/8QSzsTPFm1jRFm2",
     "role": "ADMIN",
     "address": {
       "street": "789 HQ Parkway",
@@ -53,32 +53,7 @@
     "balance": 1000000,
     "wishlist": [],
     "cart": [],
-    "createdAt": "2026-06-17T07:55:23.072Z",
+    "createdAt": "2026-06-18T08:18:18.117Z",
     "id": "usr_3"
-  },
-  {
-    "name": "VVR",
-    "email": "vangavarunreddy156@gmail.com",
-    "passwordHash": "$2b$10$OwXfkyWtHQOAISNcIv7MjuGrdRJ3i5pIc07PigdKDMwUkAPaGzaR6",
-    "role": "CUSTOMER",
-    "phone": "",
-    "address": {
-      "street": "123",
-      "city": "tech",
-      "state": "silicon",
-      "zip": "505",
-      "country": "USA"
-    },
-    "balance": 11100,
-    "wishlist": [],
-    "cart": [
-      {
-        "productId": "prod_4",
-        "quantity": 1,
-        "variant": "Titanium Gray"
-      }
-    ],
-    "createdAt": "2026-06-17T10:20:52.604Z",
-    "id": "usr_gpuz4pxuo"
   }
 ]

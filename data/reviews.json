@@ -6,7 +6,7 @@
     "productId": "prod_1",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Viper Pro Mech Wireless Keyboard is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_2",
@@ -15,7 +15,7 @@
     "productId": "prod_1",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
   },
   {
     "id": "rev_3",
@@ -24,7 +24,7 @@
     "productId": "prod_2",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Aura Sound canceling Earbuds is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_4",
@@ -33,7 +33,7 @@
     "productId": "prod_2",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
   },
   {
     "id": "rev_5",
@@ -42,7 +42,7 @@
     "productId": "prod_3",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Aerotech Ultra Lightweight Sneakers is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_6",
@@ -51,7 +51,7 @@
     "productId": "prod_3",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
   },
   {
     "id": "rev_7",
@@ -60,7 +60,7 @@
     "productId": "prod_4",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Apex Horizon Smart Watch Pro is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_8",
@@ -69,7 +69,7 @@
     "productId": "prod_4",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
   },
   {
     "id": "rev_9",
@@ -78,7 +78,7 @@
     "productId": "prod_5",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Heritage Full-Grain Leather Satchel is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_10",
@@ -87,7 +87,7 @@
     "productId": "prod_5",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
   },
   {
     "id": "rev_11",
@@ -96,7 +96,7 @@
     "productId": "prod_6",
     "rating": 5,
     "comment": "Absolutely incredible product! The build quality of this Hyperion Smart Hydro Flask is top-notch. Highly recommended for daily use.",
-    "createdAt": "2026-06-16T07:55:23.076Z"
+    "createdAt": "2026-06-17T08:18:18.120Z"
   },
   {
     "id": "rev_12",
@@ -105,6 +105,78 @@
     "productId": "prod_6",
     "rating": 4,
     "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
-    "createdAt": "2026-06-13T07:55:23.076Z"
+    "createdAt": "2026-06-14T08:18:18.120Z"
+  },
+  {
+    "id": "rev_13",
+    "userId": "usr_1",
+    "userName": "Alice Smith",
+    "productId": "prod_7",
+    "rating": 5,
+    "comment": "Absolutely incredible product! The build quality of this Nova Soundbar X300 is top-notch. Highly recommended for daily use.",
+    "createdAt": "2026-06-17T08:18:18.120Z"
+  },
+  {
+    "id": "rev_14",
+    "userId": "usr_system",
+    "userName": "Tech Reviewer Bot",
+    "productId": "prod_7",
+    "rating": 4,
+    "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
+    "createdAt": "2026-06-14T08:18:18.120Z"
+  },
+  {
+    "id": "rev_15",
+    "userId": "usr_1",
+    "userName": "Alice Smith",
+    "productId": "prod_8",
+    "rating": 5,
+    "comment": "Absolutely incredible product! The build quality of this ZenPulse Yoga Smart Band is top-notch. Highly recommended for daily use.",
+    "createdAt": "2026-06-17T08:18:18.120Z"
+  },
+  {
+    "id": "rev_16",
+    "userId": "usr_system",
+    "userName": "Tech Reviewer Bot",
+    "productId": "prod_8",
+    "rating": 4,
+    "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
+    "createdAt": "2026-06-14T08:18:18.120Z"
+  },
+  {
+    "id": "rev_17",
+    "userId": "usr_1",
+    "userName": "Alice Smith",
+    "productId": "prod_9",
+    "rating": 5,
+    "comment": "Absolutely incredible product! The build quality of this Vanguard Urban Backpack is top-notch. Highly recommended for daily use.",
+    "createdAt": "2026-06-17T08:18:18.120Z"
+  },
+  {
+    "id": "rev_18",
+    "userId": "usr_system",
+    "userName": "Tech Reviewer Bot",
+    "productId": "prod_9",
+    "rating": 4,
+    "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
+    "createdAt": "2026-06-14T08:18:18.120Z"
+  },
+  {
+    "id": "rev_19",
+    "userId": "usr_1",
+    "userName": "Alice Smith",
+    "productId": "prod_10",
+    "rating": 5,
+    "comment": "Absolutely incredible product! The build quality of this Stratus Comfort Running Shoes is top-notch. Highly recommended for daily use.",
+    "createdAt": "2026-06-17T08:18:18.120Z"
+  },
+  {
+    "id": "rev_20",
+    "userId": "usr_system",
+    "userName": "Tech Reviewer Bot",
+    "productId": "prod_10",
+    "rating": 4,
+    "comment": "Great performance overall. My only minor issue is the price point, but given the smart features, it is well worth the investment.",
+    "createdAt": "2026-06-14T08:18:18.120Z"
   }
 ]

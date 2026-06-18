@@ -2,7 +2,7 @@
   {
     "title": "Viper Pro Mech Wireless Keyboard",
     "description": "An enterprise-grade mechanical keyboard with hot-swappable tactile brown switches, double-shot PBT keycaps, customizable RGB backlighting, and dual-channel 2.4G/Bluetooth connectivity. Engineered for both high-velocity typing and professional software development.",
-    "price": 129.99,
+    "price": 6499,
     "category": "Electronics",
     "images": [
       "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop",
@@ -16,13 +16,13 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.8,
-    "createdAt": "2026-06-12T07:55:23.074Z",
+    "createdAt": "2026-06-13T08:18:18.118Z",
     "id": "prod_1"
   },
   {
     "title": "Aura Sound canceling Earbuds",
     "description": "Premium wireless earbuds equipped with adaptive active noise cancellation (ANC), high-fidelity 11mm dynamic drivers, 36 hours of aggregate battery life with the wireless charging case, and IPX7 sweat resistance.",
-    "price": 189.5,
+    "price": 4999,
     "category": "Electronics",
     "images": [
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop",
@@ -36,13 +36,13 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.6,
-    "createdAt": "2026-06-14T07:55:23.074Z",
+    "createdAt": "2026-06-15T08:18:18.118Z",
     "id": "prod_2"
   },
   {
     "title": "Aerotech Ultra Lightweight Sneakers",
     "description": "Ergonomically engineered athletic shoes featuring a breathable knitted mesh upper, responsive multi-density memory foam insoles, and high-traction carbon rubber outsoles. Designed for runners who demand speed and premium impact cushioning.",
-    "price": 95,
+    "price": 3999,
     "category": "Footwear",
     "images": [
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop",
@@ -57,13 +57,13 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.5,
-    "createdAt": "2026-06-07T07:55:23.074Z",
+    "createdAt": "2026-06-08T08:18:18.118Z",
     "id": "prod_3"
   },
   {
     "title": "Apex Horizon Smart Watch Pro",
     "description": "A professional health and activity tracker featuring an always-on AMOLED display, blood oxygen saturation (SpO2) monitor, 24/7 heart rate tracking, built-in dual-frequency GPS, and up to 14 days of standalone battery efficiency.",
-    "price": 249,
+    "price": 8999,
     "category": "Electronics",
     "images": [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop",
@@ -73,17 +73,17 @@
       "Titanium Gray",
       "Rose Gold Edition"
     ],
-    "stock": 31,
+    "stock": 32,
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.7,
-    "createdAt": "2026-06-15T07:55:23.074Z",
+    "createdAt": "2026-06-16T08:18:18.118Z",
     "id": "prod_4"
   },
   {
     "title": "Heritage Full-Grain Leather Satchel",
     "description": "Handcrafted from vegetable-tanned full-grain leather, this vintage briefcase accommodates laptops up to 16 inches. Equipped with padded chambers, heavy-duty brass hardware, and a detachable padded shoulder harness.",
-    "price": 175,
+    "price": 5499,
     "category": "Accessories",
     "images": [
       "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&auto=format&fit=crop"
@@ -96,13 +96,13 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.9,
-    "createdAt": "2026-06-02T07:55:23.074Z",
+    "createdAt": "2026-06-03T08:18:18.119Z",
     "id": "prod_5"
   },
   {
     "title": "Hyperion Smart Hydro Flask",
     "description": "Double-walled vacuum insulated stainless steel smart bottle that tracks daily hydration metrics, sends glowing intake reminders, and monitors beverage temperature in real-time via a subtle lid display.",
-    "price": 49.99,
+    "price": 1499,
     "category": "Accessories",
     "images": [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&auto=format&fit=crop"
@@ -116,7 +116,82 @@
     "sellerId": "usr_2",
     "sellerName": "Viper Electronics Store",
     "ratings": 4.2,
-    "createdAt": "2026-06-05T07:55:23.074Z",
+    "createdAt": "2026-06-06T08:18:18.119Z",
     "id": "prod_6"
+  },
+  {
+    "title": "Nova Soundbar X300",
+    "description": "A high-fidelity 120W cinematic soundbar with Dolby Audio, deep bass wireless subwoofer, multiple EQ modes, and seamless Bluetooth 5.3 connectivity. Perfect for home theatre entertainment.",
+    "price": 4499,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Classic Black"
+    ],
+    "stock": 28,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.6,
+    "createdAt": "2026-06-14T08:18:18.119Z",
+    "id": "prod_7"
+  },
+  {
+    "title": "ZenPulse Yoga Smart Band",
+    "description": "A lightweight fitness tracker with a 1.47-inch AMOLED screen, 24/7 heart rate and stress monitoring, 15+ sports modes, and up to 10 days of battery life. Designed for daily wellness.",
+    "price": 1999,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Active Pink",
+      "Stealth Black"
+    ],
+    "stock": 80,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.4,
+    "createdAt": "2026-06-12T08:18:18.119Z",
+    "id": "prod_8"
+  },
+  {
+    "title": "Vanguard Urban Backpack",
+    "description": "A water-resistant, anti-theft design backpack with a dedicated padded chamber for laptops up to 15.6 inches, integrated USB charging port, and hidden card pockets. Highly durable for daily commute.",
+    "price": 2999,
+    "category": "Accessories",
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Slate Grey",
+      "Midnight Black"
+    ],
+    "stock": 40,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.7,
+    "createdAt": "2026-06-10T08:18:18.119Z",
+    "id": "prod_9"
+  },
+  {
+    "title": "Stratus Comfort Running Shoes",
+    "description": "Ultralight breathable sports shoes featuring reactive foam cushioning, flexible knit upper, and anti-slip rubber grip. Designed for morning jogs, gym workouts, and casual walks.",
+    "price": 3499,
+    "category": "Footwear",
+    "images": [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop"
+    ],
+    "variants": [
+      "Stratus White",
+      "Core Blue"
+    ],
+    "stock": 65,
+    "sellerId": "usr_2",
+    "sellerName": "Viper Electronics Store",
+    "ratings": 4.5,
+    "createdAt": "2026-06-11T08:18:18.119Z",
+    "id": "prod_10"
   }
 ]

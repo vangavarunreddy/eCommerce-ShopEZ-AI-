@@ -549,13 +549,12 @@ export const Cart: React.FC<CartProps> = ({ onNavigate }) => {
                   <p className="text-slate-500 dark:text-slate-400 text-[11px]">Scan QR code with your UPI app (GPay, PhonePe, Paytm) to complete payment instantly:</p>
                   
                   {/* Generated QR Code Container */}
-                  <div className="w-36 h-36 border border-slate-200 dark:border-slate-800 rounded-xl mx-auto flex items-center justify-center p-2 bg-white relative group">
+                  <div className="w-40 h-40 border border-slate-200 dark:border-slate-800 rounded-xl mx-auto flex items-center justify-center p-2 bg-[#1b1c1e] relative group">
                     <img 
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=shopezai@ybl%26pn=ShopEZ%2520AI%26am=${Math.round(getCartTotal())}%26cu=INR`} 
+                      src="/phonepe_qr.png" 
                       alt="UPI Payment QR Code" 
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-indigo-600/10 group-hover:bg-transparent transition-all pointer-events-none rounded-xl" />
                   </div>
 
                   <div className="space-y-1">
